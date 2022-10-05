@@ -1,18 +1,17 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h3 data-test-song-title>{{ currentSong }}</h3>
+    <h3 data-test-artist>Guns & Roses</h3>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import { mapState } from "vuex";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
+  computed: {
+    ...mapState(["currentSong", "currentArtist"]),
   },
 };
 </script>

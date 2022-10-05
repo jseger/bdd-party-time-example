@@ -1,0 +1,76 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Displaying party dashboard",
+    "line": 1,
+    "id": "displaying-party-dashboard",
+    "tags": [],
+    "uri": "DisplayDashboard.feature",
+    "elements": [
+      {
+        "id": "displaying-party-dashboard;party-started",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Party Started",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "song title",
+                      "Welcome to the Jungle"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "artist",
+                      "Guns & Roses"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 4,
+            "name": "The current song is",
+            "result": {
+              "status": "passed",
+              "duration": 287000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "song title",
+                      "Welcome to the Jungle"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "artist",
+                      "Guns & Roses"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the following song",
+            "result": {
+              "status": "passed",
+              "duration": 82000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
